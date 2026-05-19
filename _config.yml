@@ -1,0 +1,19 @@
+remote_theme: just-the-docs/just-the-docs
+
+title: BatchTranslate with AI
+description: Documentation for BatchTranslate with AI — batch document translation powered by AI.
+
+color_scheme: light
+
+nav_sort: order
+
+logo: "https://3thousand30.github.io/batchtranslate-docs/assets/images/logo.jpg"
+
+aux_links:
+  "Get on Microsoft Store": "https://apps.microsoft.com/detail/9N75DWR9X2S7"
+
+aux_links_new_tab: true
+
+footer_content: >
+  &copy; 2026 <a href="https://3thousand30.com">3thousand30</a> &mdash;
+  <a href="https://github.com/3thousand30/batchtranslate-docs/issues">Support</a>
