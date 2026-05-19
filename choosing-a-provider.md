@@ -6,7 +6,7 @@ nav_order: 4
 
 # Choosing an AI Provider
 
-BatchTranslate with AI works with any OpenAI-compatible API. Nine providers are built in — you just pick one, get an API key, and paste it in. No other configuration needed.
+Batch Translate with AI works with any OpenAI-compatible API. Nine providers are built in — you just pick one, get an API key, and paste it in. No other configuration needed.
 
 ---
 

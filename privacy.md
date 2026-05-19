@@ -8,7 +8,7 @@ nav_order: 7
 
 **Last updated: May 2026**
 
-BatchTranslate with AI is developed by [3thousand30](https://3thousand30.com).
+Batch Translate with AI is developed by [3thousand30](https://3thousand30.com).
 
 ---
 

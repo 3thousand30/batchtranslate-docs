@@ -6,13 +6,13 @@ nav_order: 2
 
 # Getting Started
 
-This guide walks you through setting up BatchTranslate with AI and running your first batch translation.
+This guide walks you through setting up Batch Translate with AI and running your first batch translation.
 
 ---
 
 ## 1. Install the app
 
-Download and install **BatchTranslate with AI** from the Microsoft Store. Once installed, launch it from the Start menu.
+Download and install **Batch Translate with AI** from the Microsoft Store. Once installed, launch it from the Start menu.
 
 ---
 

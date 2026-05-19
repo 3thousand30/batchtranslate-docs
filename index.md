@@ -4,9 +4,9 @@ title: Home
 nav_order: 1
 ---
 
-# BatchTranslate with AI
+# Batch Translate with AI
 
-**BatchTranslate with AI** is a Windows desktop app by [3thousand30](https://3thousand30.com) for translating a whole folder of documents — PDF, DOCX, TXT, and Markdown — into one or more languages using AI.
+**Batch Translate with AI** is a Windows desktop app by [3thousand30](https://3thousand30.com) for translating a whole folder of documents — PDF, DOCX, TXT, and Markdown — into one or more languages using AI.
 
 You bring your own AI API key (BYOK). The app connects directly to the provider of your choice — no middleman, no subscription, and no file storage operated by us.
 
