@@ -6,9 +6,9 @@ nav_order: 5
 
 # Finding Your Base URL
 
-The **Base URL** is the root address of the AI provider's API. Batch Translate with AI appends `/chat/completions` to it when making requests.
+The **Base URL** is the root address of the AI provider's API. Batch Translate Text with any AI appends `/chat/completions` to it when making requests.
 
-If you select one of the nine built-in provider presets, the Base URL is filled in automatically — you don't need to touch it. This page is mainly for custom endpoints or for understanding what the field means.
+If you select one of the built-in provider presets, the Base URL is filled in automatically — you don't need to touch it. This page is mainly for custom endpoints or for understanding what the field means.
 
 ---
 

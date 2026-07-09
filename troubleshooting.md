@@ -62,7 +62,7 @@ See [Supported Files & Output](supported-files).
 ## No documents found in the folder
 
 - The app only scans **files directly inside** the chosen folder — it does **not** look in subfolders. Move files up into one folder.
-- Only `.pdf`, `.docx`, `.txt`, `.md` are picked up
+- Supported types: `.pdf`, `.docx`, `.txt`, `.md`, `.png`, `.jpg`, `.jpeg`, `.webp`, `.bmp`, `.tiff`
 - Check the folder path is reachable (network/OneDrive paths can be slow or offline)
 
 ---

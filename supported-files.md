@@ -18,6 +18,7 @@ What goes in, what comes out, and how long jobs are handled.
 | `.docx` | Text is extracted (paragraphs and headings). Original styling/layout is not preserved. |
 | `.txt` | Read as-is. |
 | `.md` | Read as-is; Markdown structure is preserved through translation. |
+| `.png` `.jpg` `.jpeg` `.webp` `.bmp` `.tiff` `.tif` | Translated via the vision API. The extracted and translated text is the output — original image layout is not reproduced. Requires a vision-capable model. |
 
 Only files **directly inside** the chosen folder are processed — the app does **not** scan subfolders. Put everything you want translated into one folder.
 
@@ -31,7 +32,7 @@ A scanned PDF is really a set of page images with no selectable text. There is n
 2. **Skips** it (no tokens spent)
 3. Lists it in the results as skipped, with the reason
 
-If you need scanned documents translated, run them through OCR first to produce a text-based PDF or a `.txt`/`.docx`, then translate that.
+If you need scanned PDFs translated, run them through OCR first to produce a text-based PDF or a `.txt`/`.docx`, then translate that. Alternatively, use standalone image files (`.png`, `.jpg`, etc.) which are handled directly via the vision API.
 
 ---
 
@@ -45,6 +46,7 @@ Documents\BatchTranslate\
     Report 2024-pdf.de-DE.md
     Report 2024-pdf.fr-FR.md
     Notes-docx.de-DE.md
+    photo-jpg.de-DE.md
     .batchtranslate-progress.json
 ```
 
@@ -57,7 +59,7 @@ Documents\BatchTranslate\
 
 ## Same-language pass-through
 
-If a target language is the same language a document is already in (as detected by the AI), the document is **copied through unchanged** and no tokens are spent. It appears in the results marked *“Source already in <language> — copied unchanged (0 tokens)”*.
+If a target language is the same language a document is already in (as detected by the AI), the document is **copied through unchanged** and no tokens are spent. It appears in the results marked *"Source already in <language> — copied unchanged (0 tokens)"*.
 
 Languages with regional variants (English US / UK) are always translated rather than copied, so the requested variant's localisation is actually applied.
 

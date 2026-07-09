@@ -6,7 +6,7 @@ nav_order: 4
 
 # Choosing an AI Provider
 
-Batch Translate with AI works with any OpenAI-compatible API. Nine providers are built in — you just pick one, get an API key, and paste it in. No other configuration needed.
+Batch Translate Text with any AI works with any OpenAI-compatible API. Ten providers are built in — you just pick one, get an API key, and paste it in. No other configuration needed.
 
 ---
 
@@ -16,7 +16,7 @@ Batch Translate with AI works with any OpenAI-compatible API. Nine providers are
 |---|---|
 | Cheapest option for bulk translation | **DeepSeek** |
 | Best overall quality | **OpenAI** (gpt-4o or gpt-4o-mini) |
-| Cheapest multi-language runs | **OpenAI** or **DeepSeek** (prompt caching) |
+| Cheapest multi-language runs | **OpenAI**, **DeepSeek**, or **xAI** (prompt caching) |
 | Fastest responses | **Groq** |
 | No account, many models | **OpenRouter** |
 | European data residency | **Mistral AI** |
@@ -27,12 +27,12 @@ Batch Translate with AI works with any OpenAI-compatible API. Nine providers are
 
 When you translate one document into several languages, the source text has to reach the model for each language. Providers with **prompt caching** reuse the source from cache for languages 2…N at a large discount instead of charging full price every time.
 
-In the app, caching-capable providers are labelled **“Cost-efficient for multi-language.”** The translation engine still works on any provider — it just won't get the discount on ones without caching, and the settings dialog tells you which is which.
+In the app, caching-capable providers are labelled **"Cost-efficient for multi-language."** The translation engine still works on any provider — it just won't get the discount on ones without caching, and the settings dialog tells you which is which.
 
 | Caching support | Providers |
 |---|---|
-| **Yes** (cost-efficient for multi-language) | OpenAI, DeepSeek, OpenRouter* |
-| No (still works, no multi-language discount) | Groq, Mistral, Together AI, xAI, Fireworks, Cerebras |
+| **Yes** (cost-efficient for multi-language) | OpenAI, DeepSeek, OpenRouter*, xAI |
+| No (still works, no multi-language discount) | Groq, Mistral, Together AI, Fireworks, Cerebras |
 
 \* OpenRouter caching depends on the underlying model you route to.
 
@@ -48,7 +48,7 @@ In the app, caching-capable providers are labelled **“Cost-efficient for multi
 | **Groq** | Very fast inference, good for high volume | Yes (rate limited) | [console.groq.com](https://console.groq.com) |
 | **Mistral AI** | Strong multilingual, EU-based | Yes (limited) | [console.mistral.ai](https://console.mistral.ai) |
 | **Together AI** | Wide model selection, competitive pricing | Yes ($1 credit) | [api.together.ai](https://api.together.ai) |
-| **xAI (Grok)** | Grok models, good reasoning | No | [console.x.ai](https://console.x.ai) |
+| **xAI (Grok)** | Grok models, good reasoning, prompt caching | No | [console.x.ai](https://console.x.ai) |
 | **Fireworks AI** | Fast, cost-effective | Yes ($1 credit) | [fireworks.ai](https://fireworks.ai) |
 | **Cerebras** | Ultra-fast inference | Yes (limited) | [cloud.cerebras.ai](https://cloud.cerebras.ai) |
 
@@ -69,10 +69,12 @@ Use **Estimate size** before large jobs, and watch the live projection during a 
 
 ## Using a custom endpoint
 
-If you use a self-hosted model (Ollama, LM Studio, LocalAI) or a provider not in the list, select **Custom (OpenAI-Compatible)** from the provider dropdown and enter your endpoint's base URL manually. The endpoint must be OpenAI-compatible (`/chat/completions`). See [Finding Your Base URL](base-url).
+If you use a self-hosted model (Ollama, LM Studio, LocalAI) or a provider not in the list, select **Custom (OpenAI-Compatible)** from the provider dropdown in the settings dialog and enter your endpoint's base URL manually. The endpoint must be OpenAI-compatible (`/chat/completions`). See [Finding Your Base URL](base-url).
 
 ---
 
 ## Switching providers
 
-You can switch providers at any time from the key icon. Base URL, model, and the caching flag update automatically from the preset; your API key is stored securely on device.
+Open the **key icon** (top right) to manage your AI connections. You can save up to 10 named connections and switch between them at any time — click the connection chip you want to use, then click **Set as active connection**. Each connection stores its own provider, model, base URL, and API key separately.
+
+To add a new connection, click **Add** inside the AI Connections dialog. Base URL, model, and the caching flag update automatically when you pick a provider preset.

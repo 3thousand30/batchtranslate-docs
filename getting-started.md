@@ -6,29 +6,34 @@ nav_order: 2
 
 # Getting Started
 
-This guide walks you through setting up Batch Translate with AI and running your first batch translation.
+This guide walks you through setting up Batch Translate Text with any AI and running your first batch translation.
 
 ---
 
 ## 1. Install the app
 
-Download and install **Batch Translate with AI** from the Microsoft Store. Once installed, launch it from the Start menu.
+Download and install **Batch Translate Text with any AI** from the Microsoft Store. Once installed, launch it from the Start menu.
+
+When you open the app for the first time, a **Getting Started** dialog appears automatically to walk you through the setup steps. You can reopen it at any time using the **?** button in the header.
 
 ---
 
-## 2. Set up your AI provider
+## 2. Set up your AI connections
 
 Before translating anything, you need an API key from an AI provider.
 
-1. Click the **key icon** (top right of the app)
-2. Select your provider from the dropdown — if you're not sure which one to pick, see [Choosing an AI Provider](choosing-a-provider)
-3. Click **Get API key** to open the provider's signup page
-4. Paste your API key into the field — it saves automatically
-5. Click **Test** to confirm everything is working
+1. Click the **key icon** (top right of the app) to open AI Connections
+2. Your default connection is shown as a chip at the top — click it to edit it, or click **Add** to create a new one
+3. Select your **provider** from the dropdown — if you're not sure which one to pick, see [Choosing an AI Provider](choosing-a-provider)
+4. Click **Get API key →** to open the provider's signup page
+5. Paste your API key into the field
+6. Click **Save & Test** to confirm everything is working
 
 Your API key is encrypted and stored on your device only. It is sent directly to your chosen provider — nowhere else.
 
-Providers marked **“Cost-efficient for multi-language”** support prompt caching, which makes translating into several languages much cheaper. See [Choosing an AI Provider](choosing-a-provider).
+You can save up to **10 named connections** and switch between them at any time. To switch the active connection, open AI Connections, click the connection you want, and click **Set as active connection**.
+
+Providers marked **"Cost-efficient for multi-language"** support prompt caching, which makes translating into several languages much cheaper. See [Choosing an AI Provider](choosing-a-provider).
 
 ---
 
@@ -37,10 +42,10 @@ Providers marked **“Cost-efficient for multi-language”** support prompt cach
 Click **Choose…** next to *Folder* and select the folder containing the documents you want to translate.
 
 - Only files **directly inside** that folder are picked up — subfolders are **not** scanned. Move files into one folder if needed.
-- Supported types: `.pdf`, `.docx`, `.txt`, `.md`
+- Supported types: `.pdf`, `.docx`, `.txt`, `.md`, `.png`, `.jpg`, `.jpeg`, `.webp`, `.bmp`, `.tiff`
 - The app shows how many documents were found and a per-type breakdown
 
-> Scanned / image-only PDFs (no selectable text) have no text layer to translate. They are detected, skipped, and clearly listed in the results — see [Supported Files & Output](supported-files).
+> Scanned / image-only PDFs (no selectable text) have no text layer to translate. They are detected, skipped, and clearly listed in the results — see [Supported Files & Output](supported-files). Standalone image files are translated via the vision API instead.
 
 ---
 
