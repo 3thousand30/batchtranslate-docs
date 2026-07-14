@@ -59,7 +59,7 @@ The endpoint must support the OpenAI `/chat/completions` format. If your provide
 
 ## Model max output tokens
 
-The settings dialog also has a **Model max output tokens** field. It controls how much output headroom the app gives each translation call. Higher values reduce chunk splitting and retrying, especially for verbose scripts such as Hindi, Arabic, Chinese, and Japanese. BatchTranslate now translates one target language per call; on caching-capable providers the shared source prefix is reused cheaply across those calls. The preset value is sensible for each provider — only change it if you know your model's real output limit.
+The settings dialog also has a **Model max output tokens** field. It controls how much output headroom the app gives each translation call. Higher values reduce chunk splitting and retrying, especially for verbose scripts such as Hindi, Arabic, Chinese, and Japanese. Batch Translate Text with any AI now translates one target language per call; on caching-capable providers the shared source prefix is reused cheaply across those calls. The preset value is sensible for each provider — only change it if you know your model's real output limit.
 
 ---
 
